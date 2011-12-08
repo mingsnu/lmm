@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<!--
+  Original Project, HTML5 Rocks 'Slides Template' Copyright 2010 Google Inc.
+ 
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+     http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ 
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+                 Brad Neuberg
+
+  Keydown generates an HTML5 Rocks-style presentation from a Markdown file, adding
+  the ability to full screen backgrounds, CSS overrides, and additional JavaScript.
+
+  Keydown (http://infews.github.com/keydown), Copyright 2010 Infews LLC
+-->
+<html manifest="cache.manifest">
+<head>
+  <!--[if gte IE 9]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"/>
+  <![endif]-->
+
+  <meta charset="utf-8"/>
+  <title>lmm</title>
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Permanent+Marker|Lobster|Ruslan+Display" rel="stylesheet" type="text/css"/>
+
+  <!--
+    Original HTML5 Rocks CSS extracted for readability
+  -->
+  <link href="css/rocks.css" rel="stylesheet" type="text/css"/>
+
+  <!--
+    Keydown provided CSS & your custom CSS
+  -->
+  
+    <link href="css/keydown.css" rel="stylesheet" type="text/css"/>
+  
+    <link href="css/syntax_highlighting.css" rel="stylesheet" type="text/css"/>
+  
+    <link href="css/lmm.css" rel="stylesheet" type="text/css"/>
+  
+
+</head>
+<body>
+<div class="presentation">
+  <div id="presentation-counter"></div>
+  <div class="slides">
+    <!--
+      First slide has Title, Instructions & options. Remove (or display:none) this slide if you like
+    -->
+    <div class="slide">
+      <section class="middle">
+        <h1>lmm</h1>
+
+        <p>
+          Press <span class="key"><b>&rarr;</b></span>, scroll, or swipe to advance
+        </p>
+
+        <h3>
+          Options
+        </h3>
+        <ul>
+          <li>
+            <input type="checkbox" id="toggle-size"/>
+            <label for="toggle-size">
+              <span>Grow</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="toggle-transitions" checked/>
+            <label for="toggle-transitions">
+              <span>Transitions</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="toggle-gradients" checked/>
+            <label for="toggle-gradients">
+              <span>Gradients</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="toggle-counter" checked/>
+            <label for="toggle-counter">
+              <span>Slide numbers</span>
+            </label>
+          </li>
+        </ul>
+        <p>
+          Made with <a href="http://infews.github.com/keydown"><b>Keydown</b></a>
+        </p>
+        <p>
+          <a href="http://www.w3.org/html/logo/">
+            <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics">
+          </a>
+        </p>
+      </section>
+    </div>
+    
+      <div class="slide">
+  <section class="middle">
+    <h1>Theory and Computational Methods for Linear Mixed Models With given Population Structure</h1>
+
+<hr />
+
+<p><img src="images/sleepy.png" width=350 /></p>
+
+<h2><a href="http://dreamhunter.me">Weicheng Zhu</a></h2>
+
+<p>Department of Statistics, Chung Ang University</p>
+
+<p>Dec 9, 2011</p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide full-background family">
+  <section class="dark middle">
+    <h1>Background</h1>
+
+<p>Population Structure</p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <h1>What's the model like given the population structure?</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="middle">
+    <h1>Model written in the paper</h1>
+
+<p><img src="images/model.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <h1>But in my opinion...</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide full-background diy">
+  <section class="dark middle">
+    <h1>As far as I know, no software is available at the moment to estimate this model</h1>
+
+<p><font size="10" color="white" >So... </font></p>
+
+
+<p><font size="10" color="white" >DIY</font></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="bulleted">
+    <h1>Two methods will be shown here</h1>
+
+<h2><a href="http://stat.bell-labs.com/project/nlme/MEMSS/index.html">Mixed-Effects Models in S and S-PLUS</a></h2>
+
+<p>by J. C. Pinheiro and D. M. Bates</p>
+
+<h2>Efficient Control of Population Structure in Model Organism Association Mapping</h2>
+
+<p>Hyun Min Kang 1,∗, Noah A. Zaitlen 2, etc</p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <h1>Method based on the book</h1>
+
+<p><img src="images/cover_small.png" width=300 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular1.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular3.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular6.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular8.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular10.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular11.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular12.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular15.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide full-background shouting">
+  <section class="dark middle">
+    <h1>What are you talking about?!</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <h1>OK, be easy... In fact the core idea is simple</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <h1>Reducing dimensions!</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular6.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular8.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular11.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular12.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/formular15.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide full-background exciting">
+  <section class="dark middle">
+    <p>So, you see in the profiled log-likelihood function we only have one variable left!</p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <h1>Method based on the paper</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/pformular2.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/pformularA1.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/pformularA8.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="dark middle">
+    <p><img src="images/pformularA11.png" width=800 /></p>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide full-background terminal">
+  <section class="dark middle">
+    
+
+<p><font size="10" color="white" >Implementation of the algorithms in R</font></p>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <ul>
+<li><p>lmm: calculate the optimum ratio value (sigma/sigmab) which maximize the log-likelihood function using the algorithm based on the book. Only "ML" method is available at the moment.</p></li>
+<li><p>lmm1: the same function with lmm but using the algorithm based on the paper.</p></li>
+</ul>
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="middle">
+    <h1>Data generation I</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <h1>Data generation I</h1>
+
+<div class="CodeRay">
+  <div class="code"><pre>library(<span class="co">MASS</span>)
+<span class="co">M</span> &lt;- <span class="i">100</span>
+beta0 &lt;- <span class="i">1</span>
+<span class="co">K</span> &lt;- cbind(c(<span class="i">1</span>,<span class="i">0</span>,.<span class="i">5</span>,.<span class="i">5</span>),c(<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,.<span class="i">5</span>),c(.<span class="i">5</span>,.<span class="i">5</span>,<span class="i">1</span>,.<span class="i">5</span>),c(.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,<span class="i">1</span>))
+b &lt;- mvrnorm(n=<span class="co">M</span>, rep(<span class="i">0</span>, <span class="i">4</span>), <span class="co">Sigma</span>=<span class="co">K</span>)
+b &lt;- as.vector(t(b))
+e &lt;- mvrnorm(n=<span class="co">M</span>, rep(<span class="i">0</span>, <span class="i">4</span>), <span class="co">Sigma</span>=diag(<span class="i">1</span>,<span class="i">4</span>))
+e &lt;- as.vector(t(e))
+y &lt;- beta0+b+e
+dat &lt;- data.frame(y=y,group=gl(<span class="co">M</span>,<span class="i">4</span>))
+&gt; head(dat)
+           y group
+<span class="i">1</span>  <span class="fl">0.3242262</span>     <span class="i">1</span>
+<span class="i">2</span>  <span class="fl">0.5738888</span>     <span class="i">1</span>
+<span class="i">3</span>  <span class="fl">4.0762558</span>     <span class="i">1</span>
+<span class="i">4</span> -<span class="fl">0.5818391</span>     <span class="i">1</span>
+<span class="i">5</span> -<span class="fl">0.2553688</span>     <span class="i">2</span>
+<span class="i">6</span>  <span class="fl">0.3744547</span>     <span class="i">2</span></pre></div>
+</div>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <h1>outcomes and comparison</h1>
+
+<div class="CodeRay">
+  <div class="code"><pre>
+&gt; system.time(
++            lmm.<span class="i">1</span> &lt;- optimize(lmm,c(<span class="fl">0.2</span>,<span class="i">3</span>),dat=dat,<span class="co">K</span>=<span class="co">K</span>,maximum=<span class="co">T</span>)
++             )
+   user  system elapsed 
+ <span class="fl">12.440</span>   <span class="fl">0.028</span>  <span class="fl">12.488</span> 
+
+&gt; system.time(
++            lmm1.<span class="i">1</span> &lt;- optimize(lmm1,c(<span class="fl">0.2</span>,<span class="i">3</span>),dat=dat,<span class="co">K</span>=<span class="co">K</span>,method=<span class="s"><span class="dl">&quot;</span><span class="k">REML</span><span class="dl">&quot;</span></span>,maximum=<span class="co">T</span>)
++             )
+   user  system elapsed 
+  <span class="fl">9.897</span>   <span class="fl">0.024</span>   <span class="fl">9.935</span> 
+
+&gt; lmm.<span class="i">1</span>
+<span class="gv">$maximum</span>
+[<span class="i">1</span>] <span class="fl">1.083974</span>
+
+<span class="gv">$objective</span>
+[<span class="i">1</span>] -<span class="fl">7004.848</span>
+
+&gt; lmm1.<span class="i">1</span>
+<span class="gv">$maximum</span>
+[<span class="i">1</span>] <span class="fl">0.9336822</span>
+
+<span class="gv">$objective</span>
+[<span class="i">1</span>] -<span class="fl">4417.749</span></pre></div>
+</div>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <h1>log-likelihood value plot</h1>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="c">## plot</span>
+lik &lt;- c()
+ratio &lt;- seq(<span class="i">0</span>,<span class="i">3</span>,by=<span class="fl">0.01</span>)[<span class="i">-1</span>]
+<span class="r">for</span>(i <span class="r">in</span> <span class="i">1</span><span class="sy">:length</span>(ratio))
+  lik[i] &lt;- lmm(ratio[i],dat=dat,<span class="co">K</span>=<span class="co">K</span>)
+plot(ratio,lik)
+ratio[which(lik==max(lik))]</pre></div>
+</div>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide full-background plot1">
+  <section class="middle">
+    
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="middle">
+    <h1>Data generation II</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <h1>Data generation II: when sigmab = 2</h1>
+
+<div class="CodeRay">
+  <div class="code"><pre>library(<span class="co">MASS</span>)
+<span class="co">M</span> &lt;- <span class="i">1000</span>
+beta0 &lt;- <span class="i">1</span>
+<span class="co">K</span> &lt;- cbind(c(<span class="i">1</span>,<span class="i">0</span>,.<span class="i">5</span>,.<span class="i">5</span>),c(<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,.<span class="i">5</span>),c(.<span class="i">5</span>,.<span class="i">5</span>,<span class="i">1</span>,.<span class="i">5</span>),c(.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,<span class="i">1</span>))
+b &lt;- mvrnorm(n=<span class="co">M</span>, rep(<span class="i">0</span>, <span class="i">4</span>), <span class="co">Sigma</span>=<span class="i">2</span>*<span class="co">K</span>)
+b &lt;- as.vector(t(b))
+e &lt;- mvrnorm(n=<span class="co">M</span>, rep(<span class="i">0</span>, <span class="i">4</span>), <span class="co">Sigma</span>=diag(<span class="i">1</span>,<span class="i">4</span>))
+e &lt;- as.vector(t(e))
+y &lt;- beta0+b+e
+dat &lt;- data.frame(y=y,group=gl(<span class="co">M</span>,<span class="i">4</span>))</pre></div>
+</div>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <h1>outcomes and comparison</h1>
+
+<div class="CodeRay">
+  <div class="code"><pre>
+&gt; system.time(
++            lmm.<span class="i">1</span> &lt;- optimize(lmm,c(<span class="fl">0.2</span>,<span class="i">3</span>),dat=dat,<span class="co">K</span>=<span class="co">K</span>,maximum=<span class="co">T</span>)
++             )
+   user  system elapsed 
+ <span class="fl">13.504</span>   <span class="fl">0.108</span>  <span class="fl">13.630</span> 
+&gt; system.time(
++            lmm1.<span class="i">1</span> &lt;- optimize(lmm1,c(<span class="fl">0.2</span>,<span class="i">3</span>),dat=dat,<span class="co">K</span>=<span class="co">K</span>,method=<span class="s"><span class="dl">&quot;</span><span class="k">REML</span><span class="dl">&quot;</span></span>,maximum=<span class="co">T</span>)
++             )
+   user  system elapsed 
+  <span class="fl">8.333</span>   <span class="fl">0.068</span>   <span class="fl">8.415</span> 
+&gt; lmm.<span class="i">1</span>
+<span class="gv">$maximum</span>
+[<span class="i">1</span>] <span class="fl">0.6656635</span>
+
+<span class="gv">$objective</span>
+[<span class="i">1</span>] -<span class="fl">7636.179</span>
+
+&gt; lmm1.<span class="i">1</span>
+<span class="gv">$maximum</span>
+[<span class="i">1</span>] <span class="fl">0.7188244</span>
+
+<span class="gv">$objective</span>
+[<span class="i">1</span>] -<span class="fl">4777.455</span>
+</pre></div>
+</div>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="middle">
+    <h1>Data generation III</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <h1>Data generation III: when K is 10 by 10</h1>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="co">M</span> &lt;- <span class="i">400</span>
+beta0 &lt;- <span class="i">1</span>
+<span class="co">K</span> &lt;- matrix(c(<span class="i">1</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,.<span class="i">5</span>,<span class="i">0</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,
+              <span class="i">0</span>,<span class="i">1</span>,<span class="i">0</span>,<span class="i">0</span>,.<span class="i">5</span>,<span class="i">0</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,<span class="i">0</span>,<span class="i">0</span>,.<span class="i">5</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,<span class="i">0</span>,.<span class="i">5</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,<span class="i">0</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>
+              ),<span class="i">10</span>)
+<span class="co">K</span> &lt;- t(<span class="co">K</span>)+<span class="co">K</span>-diag(<span class="i">1</span>,<span class="i">10</span>)
+b &lt;-   mvrnorm(n=<span class="co">M</span>, rep(<span class="i">0</span>, <span class="i">10</span>), <span class="co">Sigma</span>=<span class="co">K</span>)
+b &lt;- as.vector(t(b))
+e &lt;-   mvrnorm(n=<span class="co">M</span>, rep(<span class="i">0</span>, <span class="i">10</span>), <span class="co">Sigma</span>=diag(<span class="i">1</span>,<span class="i">10</span>))
+e &lt;- as.vector(t(e))
+y &lt;- beta0+b+e
+dat &lt;- data.frame(y=y,group=gl(<span class="co">M</span>,<span class="i">10</span>))</pre></div>
+</div>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <h1>outcomes and comparison</h1>
+
+<div class="CodeRay">
+  <div class="code"><pre>
+&gt; system.time(
++            lmm.<span class="i">1</span> &lt;- optimize(lmm,c(<span class="fl">0.2</span>,<span class="i">3</span>),dat=dat,<span class="co">K</span>=<span class="co">K</span>,maximum=<span class="co">T</span>)
++             )
+   user  system elapsed 
+  <span class="fl">4.520</span>   <span class="fl">0.000</span>   <span class="fl">4.526</span> 
+&gt; system.time(
++            lmm1.<span class="i">1</span> &lt;- optimize(lmm1,c(<span class="fl">0.2</span>,<span class="i">3</span>),dat=dat,<span class="co">K</span>=<span class="co">K</span>,method=<span class="s"><span class="dl">&quot;</span><span class="k">REML</span><span class="dl">&quot;</span></span>,maximum=<span class="co">T</span>)
++             )
+   user  system elapsed 
+  <span class="fl">3.920</span>   <span class="fl">0.000</span>   <span class="fl">3.927</span> 
+&gt; lmm.<span class="i">1</span>
+<span class="gv">$maximum</span>
+[<span class="i">1</span>] <span class="fl">1.002273</span>
+
+<span class="gv">$objective</span>
+[<span class="i">1</span>] -<span class="fl">6885.292</span>
+
+&gt; lmm1.<span class="i">1</span>
+<span class="gv">$maximum</span>
+[<span class="i">1</span>] <span class="fl">1.123929</span>
+
+<span class="gv">$objective</span>
+[<span class="i">1</span>] -<span class="fl">5824.711</span></pre></div>
+</div>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section class="middle">
+    <h1>Data generation IV</h1>
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <h1>Data generation IV: when K is 10 by 10 &amp; sigmab = 3</h1>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="co">M</span> &lt;- <span class="i">400</span>
+beta0 &lt;- <span class="i">1</span>
+<span class="co">K</span> &lt;- matrix(c(<span class="i">1</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,.<span class="i">5</span>,<span class="i">0</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,
+              <span class="i">0</span>,<span class="i">1</span>,<span class="i">0</span>,<span class="i">0</span>,.<span class="i">5</span>,<span class="i">0</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,<span class="i">0</span>,<span class="i">0</span>,.<span class="i">5</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,<span class="i">0</span>,.<span class="i">5</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,.<span class="i">25</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,<span class="i">0</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,.<span class="i">5</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>,.<span class="i">5</span>,
+              <span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">0</span>,<span class="i">1</span>
+              ),<span class="i">10</span>)
+<span class="co">K</span> &lt;- t(<span class="co">K</span>)+<span class="co">K</span>-diag(<span class="i">1</span>,<span class="i">10</span>)
+b &lt;-   mvrnorm(n=<span class="co">M</span>, rep(<span class="i">0</span>, <span class="i">10</span>), <span class="co">Sigma</span>=<span class="i">3</span>*<span class="co">K</span>)
+b &lt;- as.vector(t(b))
+e &lt;-   mvrnorm(n=<span class="co">M</span>, rep(<span class="i">0</span>, <span class="i">10</span>), <span class="co">Sigma</span>=diag(<span class="i">1</span>,<span class="i">10</span>))
+e &lt;- as.vector(t(e))
+y &lt;- beta0+b+e
+dat &lt;- data.frame(y=y,group=gl(<span class="co">M</span>,<span class="i">10</span>))
+<span class="c">## test</span>
+optimize(lmm,c(<span class="fl">0.2</span>,<span class="i">3</span>),dat=dat,<span class="co">K</span>=<span class="co">K</span>,maximum=<span class="co">T</span>)
+<span class="c"># [1] 0.5900726</span></pre></div>
+</div>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+      <div class="slide">
+  <section>
+    <h1>outcome and comparison</h1>
+
+<div class="CodeRay">
+  <div class="code"><pre>&gt; system.time(
++            lmm.<span class="i">1</span> &lt;- optimize(lmm,c(<span class="fl">0.2</span>,<span class="i">3</span>),dat=dat,<span class="co">K</span>=<span class="co">K</span>,maximum=<span class="co">T</span>)
++             )
+   user  system elapsed 
+  <span class="fl">4.969</span>   <span class="fl">0.000</span>   <span class="fl">4.975</span> 
+&gt; system.time(
++            lmm1.<span class="i">1</span> &lt;- optimize(lmm1,c(<span class="fl">0.2</span>,<span class="i">3</span>),dat=dat,<span class="co">K</span>=<span class="co">K</span>,method=<span class="s"><span class="dl">&quot;</span><span class="k">REML</span><span class="dl">&quot;</span></span>,maximum=<span class="co">T</span>)
++             )
+   user  system elapsed 
+  <span class="fl">3.612</span>   <span class="fl">0.000</span>   <span class="fl">3.617</span> 
+&gt; lmm.<span class="i">1</span>
+<span class="gv">$maximum</span>
+[<span class="i">1</span>] <span class="fl">0.5609228</span>
+
+<span class="gv">$objective</span>
+[<span class="i">1</span>] -<span class="fl">8034.179</span>
+
+&gt; lmm1.<span class="i">1</span>
+<span class="gv">$maximum</span>
+[<span class="i">1</span>] <span class="fl">0.5305474</span>
+
+<span class="gv">$objective</span>
+[<span class="i">1</span>] -<span class="fl">6839.043</span>
+</pre></div>
+</div>
+
+
+
+
+  </section>
+  <div class="attribution hidden">
+    <a href="">
+      
+    </a>
+  </div>
+</div>
+
+    
+  </div>
+</div>
+
+<!--
+  Original HTML5 Rocks JavaScript extracted for readability
+-->
+<script src="js/rocks.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+<script>CFInstall.check({ mode: "overlay" });</script>
+<![endif]-->
+
+<!--
+  Keydown puts your custom JS here
+-->
+
+  <script src="js/lmm.js" type="text/javascript"></script>
+
+
+</body>
+</html>

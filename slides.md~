@@ -1,0 +1,161 @@
+# lmm
+
+!SLIDE middle
+
+# Theory and Computational Methods for Linear Mixed Models With given Population Structure
+
+* * * * *
+
+<img src="images/sleepy.png" width=350 />
+
+## [Weicheng Zhu](http://dreamhunter.me)
+
+Department of Statistics, Chung Ang University  
+
+Dec 9, 2011
+
+!SLIDE dark middle
+
+# Background
+
+Population Structure
+
+}}} images/family.jpg
+
+!SLIDE dark middle
+
+# What's the model like given the population structure?
+
+!SLIDE middle
+
+# Model written in the paper
+
+<img src="images/model.png" width=800 />
+
+
+!SLIDE dark middle
+
+# But in my opinion...
+
+!SLIDE dark middle
+
+# As far as I know, no software is available at the moment to estimate this model
+<p><font size="10" color="white" >So... </font></p>
+<font size="10" color="white" >DIY</font>
+
+}}} images/diy.jpg
+
+
+!SLIDE bulleted
+
+# Two methods will be shown here
+
+## [Mixed-Effects Models in S and S-PLUS](http://stat.bell-labs.com/project/nlme/MEMSS/index.html) 
+by J. C. Pinheiro and D. M. Bates
+
+## Efficient Control of Population Structure in Model Organism Association Mapping
+Hyun Min Kang 1,∗, Noah A. Zaitlen 2, etc
+
+!SLIDE dark middle
+
+# Method based on the book
+
+<img src="images/cover_small.png" width=300 />
+
+!SLIDE dark middle
+
+<img src="images/formular1.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular3.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular6.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular8.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular10.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular11.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular12.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular15.png" width=800 />
+
+!SLIDE dark middle
+
+# What are you talking about?!
+
+}}}images/shouting.jpg
+
+!SLIDE dark middle
+
+# OK, be easy... In fact the core idea is simple
+
+!SLIDE dark middle
+
+# Reducing dimensions!
+
+!SLIDE dark middle
+
+<img src="images/formular6.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular8.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular11.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular12.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/formular15.png" width=800 />
+
+!SLIDE dark middle
+
+So, you see in the profiled log-likelihood function we only have one variable left!
+
+}}}images/exciting.jpeg
+
+!SLIDE dark middle
+
+# Method based on the paper
+
+!SLIDE dark middle
+
+<img src="images/pformular2.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/pformularA1.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/pformularA8.png" width=800 />
+
+!SLIDE dark middle
+
+<img src="images/pformularA11.png" width=800 />
+
+!SLIDE dark middle
+
+<p><font size="10" color="white" >Implementation of the algorithms in R</font></p>
+
+}}}images/terminal.png
